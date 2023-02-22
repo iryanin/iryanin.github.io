@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on My New Hugo Site</title>
+        <link>https://ryani.org/post/</link>
+        <description>Recent content in Posts on My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 22 Feb 2023 23:38:55 +0800</lastBuildDate><atom:link href="https://ryani.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://ryani.org/post/about/</link>
+        <pubDate>Wed, 22 Feb 2023 23:38:55 +0800</pubDate>
+        
+        <guid>https://ryani.org/post/about/</guid>
+        <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
