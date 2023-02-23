@@ -1,13 +1,13 @@
 ---
 title: About
 description: Ryan
-date: '2023-02-22'
+date: '2023-02-21'
 aliases:
   - about-us
   - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: '2023-02-09'
+lastmod: '2023-02-23'
 menu:
     main: 
         weight: -90
@@ -15,6 +15,6 @@ menu:
             icon: user
 ---
 
-Students in Software Engineering.
+A student in Software Engineering.
 
-Always 17 years old.
+Always 18 years old.
