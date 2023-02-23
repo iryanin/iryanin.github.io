@@ -39,7 +39,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: Always 17 years old
+        subtitle: Always 18 years old
         avatar:
             enabled: true
             local: true
@@ -200,7 +200,7 @@ markup:
     goldmark:
         renderer:
             ## Set to true if you have HTML content inside Markdown
-            unsafe: false
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
