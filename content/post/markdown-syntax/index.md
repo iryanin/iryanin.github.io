@@ -19,12 +19,12 @@ This article offers a sample of basic Markdown syntax that can be used in Hugo c
 
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-###### H6
-##### H5
-#### H4
-### H3
-## H2
 # H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
 ## Paragraph
 
@@ -34,12 +34,12 @@ Paragraphs are separated via extra empty line like Latex syntax.
 
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
-#### Blockquote without attribution
+### Blockquote without attribution
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use *Markdown syntax* within a blockquote.
 
-#### Blockquote with attribution
+### Blockquote with attribution
 
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
@@ -56,7 +56,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     Bob | 27
   Alice | 23
 
-#### Inline Markdown within tables
+### Inline Markdown within tables
 
 | Italics   | Bold     | Code   |
 | --------  | -------- | ------ |
@@ -68,7 +68,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 
 ## Code Blocks
 
-#### Code block with backticks
+### Code block with backticks
 
 ```html
 <!doctype html>
@@ -83,7 +83,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 ```
 
-#### Code block indented with four spaces
+### Code block indented with four spaces
 
     <!doctype html>
     <html lang="en">
@@ -96,7 +96,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
+### Code block with Hugo's internal highlight shortcode
 {{< highlight html >}}
 <!doctype html>
 <html lang="en">
@@ -110,7 +110,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
-#### Diff code block
+### Diff code block
 
 ```diff
 [dependencies.bevy]
@@ -122,19 +122,19 @@ rev = "11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13"
 
 ## List Types
 
-#### Ordered List
+### Ordered List
 
 1. First item
 2. Second item
 3. Third item
 
-#### Unordered List
+### Unordered List
 
 * List item
 * Another item
 * And another item
 
-#### Nested list
+### Nested list
 
 * Fruit
   * Apple

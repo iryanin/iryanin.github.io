@@ -155,9 +155,9 @@ params:
 
     defaultImage:
         opengraph:
-            enabled: false
-            local: false
-            src:
+            enabled: true
+            local: true
+            src: /img/default.jpeg
 
     colorScheme:
         # Display toggle
@@ -202,7 +202,7 @@ markup:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
     tableOfContents:
-        endLevel: 4
+        endLevel: 6
         ordered: true
         startLevel: 2
     highlight:
