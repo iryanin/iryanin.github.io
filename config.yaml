@@ -31,7 +31,7 @@ params:
     favicon:  /favicon.ico
     footer:
         since: 2022
-        customText:
+        customText: 这个世界，真是耀眼啊
 
     dateFormat:
         published: Jan 02, 2006

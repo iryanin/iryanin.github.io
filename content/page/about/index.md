@@ -10,11 +10,14 @@ license: CC BY-NC-ND
 lastmod: '2023-02-23'
 menu:
     main: 
-        weight: -90
+        weight: -10
         params:
             icon: user
 ---
 
-A student in Software Engineering.
+A full-time student in Software Engineering, struggling in tons of code.
 
 Always 18 years old.
+
+Email: a@b.org. ( a = ryan, b = ryani )
+
