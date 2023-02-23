@@ -9,7 +9,6 @@ tags = [
 categories = [
     "Programming Language",
 ]
-series = ["Themes Guide"]
 image = "cover.jpeg"
 +++
 

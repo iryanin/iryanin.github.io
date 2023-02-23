@@ -9,7 +9,6 @@ tags = [
 categories = [
     "Tools",
 ]
-series = ["Themes Guide"]
 image = "cover.jpg"
 +++
 
