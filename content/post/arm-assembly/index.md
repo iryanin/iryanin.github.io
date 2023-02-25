@@ -1,7 +1,7 @@
 +++
 author = "Ryan"
 title = "Arm Assembly Syntax"
-date = "2023-02-23"
+date = "2023-02-24"
 description = "Connection between assembly and C programming language."
 tags = [
     "Arm assembly",
