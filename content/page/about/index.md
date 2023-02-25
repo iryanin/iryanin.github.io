@@ -15,7 +15,7 @@ menu:
             icon: user
 ---
 
-A full-time student in Software Engineering, struggling in tons of code.
+A full-time student in Software Engineering @ NJU, struggling in tons of code.
 
 Always 18 years old.
 

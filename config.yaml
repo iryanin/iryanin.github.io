@@ -2,11 +2,7 @@ baseurl: https://example.com
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: Ryan's tech blog
-
-
-# Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+title: Ryan の himitsu
 
 # GA Tracking ID
 googleAnalytics:
@@ -39,7 +35,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: Always 18 years old
+        subtitle: Always 18 years old.
         avatar:
             enabled: true
             local: true
