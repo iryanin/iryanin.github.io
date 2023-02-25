@@ -8,6 +8,8 @@ aliases:
   - contact
 license: CC BY-NC-ND
 lastmod: '2023-02-23'
+image: cover.jpg
+
 menu:
     main: 
         weight: -10
