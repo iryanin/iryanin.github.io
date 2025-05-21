@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
     color: grey;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Lexend', 'Rubik', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 .self {
   color: black;
@@ -12,7 +12,7 @@ body {
   color: red;
 }
 .pub {
-  margin: 1em;
+  margin: 1.5em;
 }
 nav ul, footer ul {
     padding: 0px;
