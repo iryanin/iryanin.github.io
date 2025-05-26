@@ -1,42 +1,56 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-    color: grey;
-    font-family: 'Rubik', 'Lexend', 'Helvetica', 'Arial', 'Sans-Serif';
+	margin: 60px auto;
+	width: 70%;
+	color: grey;
+	font-family: 'Rubik', 'Lexend', 'Helvetica', 'Arial', 'Sans-Serif';
 }
+
 .self {
-  color: black;
-  font-weight: bold;
+	color: black;
+	font-weight: bold;
 }
+
 .highlight {
-  color: red;
+	color: red;
 }
+
 .pub {
-  margin: 1.5em;
+	margin: 1.5em;
 }
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+nav ul,
+footer ul {
+	padding: 0px;
+	list-style: none;
+	font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+nav ul li,
+footer ul li {
+	display: inline;
+	margin-right: 20px;
 }
-h1, h2, h3 {
-    color: black;
+
+h1,
+h2,
+h3 {
+	color: black;
 }
+
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+	border-top: 1px solid #d5d5d5;
+	font-size: .8em;
 }
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+
+ul.posts {
+	margin: 20px auto 40px;
+	font-size: 1.5em;
 }
+
 ul.posts li {
-    list-style: none;
+	list-style: none;
 }
+
 .container li::marker {
-    font-family: monospace;
+	font-family: monospace;
 }
