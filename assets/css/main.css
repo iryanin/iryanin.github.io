@@ -250,6 +250,9 @@ ol {
     background-color: var(--project-bg);
     padding: 20px;
 }
+.project > p {
+    margin-block: 10px;
+}
 
 /* Education */
 .edu {
