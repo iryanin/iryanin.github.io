@@ -10,50 +10,40 @@
     <body>
         <header></header>
         <main>
-            <table border="0">
-                <tr>
-                    <td>
-                        <div class="author-avatar">
-                            <img src="assets/images/profile.jpg" class="author-avatar" alt="Rui Ning 「宁锐」" />
-                        </div>
-                    </td>
-                    <td>
-                        <div class="author-content">
-                            <h1 style="font-size: 28px">
-                                <p class="author-name"><b>Rui Ning 「宁锐」</b></p>
-                            </h1>
-                            <ul class="author-contact">
-                                <li><a href="https://software.nju.edu.cn/">Software Institute</a></li>
-                                <li><a href="https://www.nju.edu.cn/">Nanjing University</a></li>
-                            </ul>
-                            <p><i class="fas fa-fw fa-envelope"></i> Email: rning [at] smail.nju.edu.cn</p>
-                            <p>
-                                <a href="https://github.com/iryanin"><i class="fab fa-fw fa-github"></i> Github</a>
-                                /
-                                <a href="https://scholar.google.com/citations?user=IV4l9kcAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a>
-                                <!--/
-                                <a href=""><i class="fas fa-file-pdf"></i> Resume</a>
-                                /
-                                <a href="https://www.linkedin.com/in/"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>-->
-                            </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div class="author">
+                <div class="author-avatar">
+                    <img src="assets/images/profile.jpg" alt="Rui Ning 「宁锐」" />
+                </div>
+                <div class="author-info">
+                    <h1 class="author-name"><b>Rui Ning 「宁锐」</b></h1>
+                    <ul class="author-contact">
+                        <li><a href="https://software.nju.edu.cn/">Software Institute</a></li>
+                        <li><a href="https://www.nju.edu.cn/">Nanjing University</a></li>
+                    </ul>
+                    <p><i class="fas fa-fw fa-envelope"></i> Email: rning [at] smail.nju.edu.cn</p>
+                    <p>
+                        <a href="https://github.com/iryanin"><i class="fab fa-fw fa-github"></i> Github</a>
+                        /
+                        <a href="https://scholar.google.com/citations?user=IV4l9kcAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a>
+                        <!--/
+                        <a href=""><i class="fas fa-file-pdf"></i> Resume</a>
+                        /
+                        <a href="https://www.linkedin.com/in/"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a>-->
+                    </p>
+                </div>
+            </div>
 
             <p>I am currently an undergraduate in the <a href="https://software.nju.edu.cn/">Software Institute</a> at <a href="https://www.nju.edu.cn/">Nanjing University</a>, working at the intersection between <i>datacenter network</i> and <i>machine learning system</i>.</p>
 
             <p>I was fortunate to be advised by <a href="https://cs.nju.edu.cn/tianchen/">Prof. Chen Tian</a>. My research has received recognition through one <a href="assets/papers/eurosys25-ning.pdf">Best Student Paper Award</a> at top-tier system conferences.</p>
 
-            <h3 id="research-highlights">Research Highlights</h3>
-            <div style="border-left: 4px solid #0066cc; padding-left: 15px; margin: 20px 0">
+            <h3>Research Highlights</h3>
+            <div class="research">
                 <p>My research mainly focuses on building <b>datacenter network system</b> and <b>machine learning system</b> for large-scale machine learning workloads, with a recent emphasis on large language models (LLMs). In particular, I'm attempting to bridge the <i>performance</i> gap between emerging machine learning applications (e.g., GenAI) and datacenter network system.</p>
             </div>
 
-            <div class="proj">
-                <p>
-                    <span style="color: #666; font-size: 0.9em"><sup>★</sup> indicates projects where I am the project lead</span>
-                </p>
+            <div class="project">
+                <span style="color: #666; font-size: 0.9em"><sup>★</sup> indicates projects where I am the project lead</span>
 
                 <p>
                     <span style="color: #006633"><b>Datacenter Network for ML:</b></span>
@@ -110,37 +100,37 @@
                         <i>
                             <span class="tooltip"
                                 >ACM ICS
-                                <span class="tooltiptext">ACM International Conference on Supercomputing</span>
+                                <span class="tooltip-text">ACM International Conference on Supercomputing</span>
                             </span></i
                         >, 2025
                     </span>
                     |
-                    <label class="toggle-link"><input class="toggle-abs" type="checkbox" hidden /> [abs]</label>
+                    <label class="pub-toggle-link"><input class="pub-toggle-abs" type="checkbox" hidden /> [abs]</label>
                     |
-                    <label class="toggle-link"><input class="toggle-bib" type="checkbox" hidden /> [bib]</label>
+                    <label class="pub-toggle-link"><input class="pub-toggle-bib" type="checkbox" hidden /> [bib]</label>
                 </p>
 
-                <pre class="abs">BCube is a modular data center network. Compared with other topologies, BCube has natural advantages, such as lower deployment costs and stronger failure recovery capabilities. However, RDMA technology used in BCube still faces challenges, including high retransmission overhead, Head-of-Line Blocking (HoLB) and deadlock problems. Existing solutions for traditional data centers cannot simultaneously address these issues due to the unique topology and server transmission characteristics of BCube. In this paper, we propose a per-port flow control named PortFC for BCube. PortFC addresses the above problems through the designs of a Pause/Resume control signal, a per-port queue allocation method, an egress-detecting per-port flow control mechanism, and a server-aware queue scheduling method. Our evaluation shows that PortFC is free from retransmission, capable of eliminating HoLB and avoiding deadlocks. PortFC achieves 1.7-8.0 times higher throughput and reduces latency by 11.7%-87.7% compared to the state-of-the-art lossy RDMA based on IRN and the lossless RDMA method based on PFC.</pre>
+                <pre class="pub-abs">
+                    BCube is a modular data center network. Compared with other topologies, BCube has natural advantages, such as lower deployment costs and stronger failure recovery capabilities. However, RDMA technology used in BCube still faces challenges, including high retransmission overhead, Head-of-Line Blocking (HoLB) and deadlock problems. Existing solutions for traditional data centers cannot simultaneously address these issues due to the unique topology and server transmission characteristics of BCube. In this paper, we propose a per-port flow control named PortFC for BCube. PortFC addresses the above problems through the designs of a Pause/Resume control signal, a per-port queue allocation method, an egress-detecting per-port flow control mechanism, and a server-aware queue scheduling method. Our evaluation shows that PortFC is free from retransmission, capable of eliminating HoLB and avoiding deadlocks. PortFC achieves 1.7-8.0 times higher throughput and reduces latency by 11.7%-87.7% compared to the state-of-the-art lossy RDMA based on IRN and the lossless RDMA method based on PFC.
+                </pre>
 
-                <pre class="bib">
-@inproceedings{10.1145/3721145.3725749,
-    author = {Cao, Peirui and Ning, Rui and Yang, Hongwei and Zhang, Zhaochen and Liu, Chang and Li, Rui and Yang, Yongqi and Liu, Yunzhuo and Huang, Chengyuan and Sun, Tao and Duan, Xiaodong and Chen, Guihai and Tian, Chen},
-    title = {PortFC: Designing High-performance Deadlock-free BCube Networks},
-    year = {2025},
-    isbn = {9798400715372},
-    publisher = {Association for Computing Machinery},
-    address = {New York, NY, USA},
-    url = {https://doi.org/10.1145/3721145.3725749},
-    doi = {10.1145/3721145.3725749},
-    booktitle = {Proceedings of the 39th ACM International Conference on Supercomputing},
-    pages = {1052–1063},
-    numpages = {12},
-    keywords = {Data Center Networks, Flow Control, Modular Data Center},
-    location = {
-    },
-    series = {ICS '25}
-}</pre
-                >
+                <pre class="pub-bib">
+                    @inproceedings{10.1145/3721145.3725749,
+                        author = {Cao, Peirui and Ning, Rui and Yang, Hongwei and Zhang, Zhaochen and Liu, Chang and Li, Rui and Yang, Yongqi and Liu, Yunzhuo and Huang, Chengyuan and Sun, Tao and Duan, Xiaodong and Chen, Guihai and Tian, Chen},
+                        title = {PortFC: Designing High-performance Deadlock-free BCube Networks},
+                        year = {2025},
+                        isbn = {9798400715372},
+                        publisher = {Association for Computing Machinery},
+                        address = {New York, NY, USA},
+                        url = {https://doi.org/10.1145/3721145.3725749},
+                        doi = {10.1145/3721145.3725749},
+                        booktitle = {Proceedings of the 39th ACM International Conference on Supercomputing},
+                        pages = {1052–1063},
+                        numpages = {12},
+                        keywords = {Data Center Networks, Flow Control, Modular Data Center},
+                        series = {ICS '25}
+                    }
+                </pre>
             </div>
 
             <div class="pub">
@@ -155,38 +145,40 @@
                         <i>
                             <span class="tooltip"
                                 >ACM EuroSys
-                                <span class="tooltiptext">ACM European Conference on Computer Systems</span>
+                                <span class="tooltip-text">ACM European Conference on Computer Systems</span>
                             </span></i
                         >, 2025 <span style="color: red"><b>(Best Student Paper Award)</b></span>
                     </span>
                     |
-                    <label class="toggle-link"><input class="toggle-abs" type="checkbox" hidden /> [abs]</label>
+                    <label class="pub-toggle-link"><input class="pub-toggle-abs" type="checkbox" hidden /> [abs]</label>
                     |
-                    <label class="toggle-link"><input class="toggle-bib" type="checkbox" hidden /> [bib]</label>
+                    <label class="pub-toggle-link"><input class="pub-toggle-bib" type="checkbox" hidden /> [bib]</label>
                     |
                     <a href="https://github.com/NASA-NJU/PrioPlus/"><i class="fab fa-fw fa-github"></i></a>
                 </p>
 
-                <pre class="abs">In data center networks, various types of traffic with strict performance requirements operate simultaneously, necessitating effective isolation and scheduling through priority queues. However, most switches support only around ten priority queues. Virtual priority can address this limitation by emulating multi-priority queues on a single physical queue, but existing solutions often require complex switch-level scheduling and hardware changes. Our key insight is that virtual priority can be achieved by carefully managing bandwidth contention in a physical queue, which is traditionally handled by congestion control (CC) algorithms. Hence, the virtual priority mechanism needs to be tightly coupled with CC. In this paper, we propose PrioPlus, a CC enhancement algorithm that can be integrated with existing congestion control schemes to enable virtual priority transmission. PrioPlus assigns specific delay ranges to different priority levels, ensuring that flows transmit only when the delay is within the assigned range, effectively meeting virtual priority requirements. Compared to Swift CC with physical priority queues, PrioPlus provides strict priority for high-priority flows without impacting performance sensibly. Meanwhile, it benefits low-priority flows from 25% to 41% as its priority-aware design enhances CC's ability to fully utilize available bandwidth once higher-priority traffic completes. As a result, in coflow and model training scenarios, PrioPlus improves job completion times by 21% and 33%, respectively, compared to Swift with physical priority queues.</pre>
+                <pre class="pub-abs">
+                    In data center networks, various types of traffic with strict performance requirements operate simultaneously, necessitating effective isolation and scheduling through priority queues. However, most switches support only around ten priority queues. Virtual priority can address this limitation by emulating multi-priority queues on a single physical queue, but existing solutions often require complex switch-level scheduling and hardware changes. Our key insight is that virtual priority can be achieved by carefully managing bandwidth contention in a physical queue, which is traditionally handled by congestion control (CC) algorithms. Hence, the virtual priority mechanism needs to be tightly coupled with CC. In this paper, we propose PrioPlus, a CC enhancement algorithm that can be integrated with existing congestion control schemes to enable virtual priority transmission. PrioPlus assigns specific delay ranges to different priority levels, ensuring that flows transmit only when the delay is within the assigned range, effectively meeting virtual priority requirements. Compared to Swift CC with physical priority queues, PrioPlus provides strict priority for high-priority flows without impacting performance sensibly. Meanwhile, it benefits low-priority flows from 25% to 41% as its priority-aware design enhances CC's ability to fully utilize available bandwidth once higher-priority traffic completes. As a result, in coflow and model training scenarios, PrioPlus improves job completion times by 21% and 33%, respectively, compared to Swift with physical priority queues.
+                </pre>
 
-                <pre class="bib">
-@inproceedings{10.1145/3689031.3717463,
-    author = {Zhang, Zhaochen and Xue, Feiyang and He, Keqiang and Yin, Zhimeng and Antichi, Gianni and Gao, Jiaqi and Wang, Yizhi and Ning, Rui and Nan, Haixin and Zhang, Xu and Cao, Peirui and Wang, Xiaoliang and Dou, Wanchun and Chen, Guihai and Tian, Chen},
-    title = {Enabling Virtual Priority in Data Center Congestion Control},
-    year = {2025},
-    isbn = {9798400711961},
-    publisher = {Association for Computing Machinery},
-    address = {New York, NY, USA},
-    url = {https://doi.org/10.1145/3689031.3717463},
-    doi = {10.1145/3689031.3717463},
-    booktitle = {Proceedings of the Twentieth European Conference on Computer Systems},
-    pages = {396–412},
-    numpages = {17},
-    keywords = {Congestion control algorithm, Data center network, In-network priority},
-    location = {Rotterdam, Netherlands},
-    series = {EuroSys '25}
-}</pre
-                >
+                <pre class="pub-bib">
+                    @inproceedings{10.1145/3689031.3717463,
+                        author = {Zhang, Zhaochen and Xue, Feiyang and He, Keqiang and Yin, Zhimeng and Antichi, Gianni and Gao, Jiaqi and Wang, Yizhi and Ning, Rui and Nan, Haixin and Zhang, Xu and Cao, Peirui and Wang, Xiaoliang and Dou, Wanchun and Chen, Guihai and Tian, Chen},
+                        title = {Enabling Virtual Priority in Data Center Congestion Control},
+                        year = {2025},
+                        isbn = {9798400711961},
+                        publisher = {Association for Computing Machinery},
+                        address = {New York, NY, USA},
+                        url = {https://doi.org/10.1145/3689031.3717463},
+                        doi = {10.1145/3689031.3717463},
+                        booktitle = {Proceedings of the Twentieth European Conference on Computer Systems},
+                        pages = {396–412},
+                        numpages = {17},
+                        keywords = {Congestion control algorithm, Data center network, In-network priority},
+                        location = {Rotterdam, Netherlands},
+                        series = {EuroSys '25}
+                    }
+                </pre>
             </div>
 
             <h4>Preprints</h4>
@@ -200,28 +192,28 @@
                     <br />
                     <span style="color: gray"> <i>arXiv:2505.17694</i>, 2025 </span>
                     |
-                    <label class="toggle-link"><input class="toggle-abs" type="checkbox" hidden /> [abs]</label>
+                    <label class="pub-toggle-link"><input class="pub-toggle-abs" type="checkbox" hidden /> [abs]</label>
                     |
-                    <label class="toggle-link"><input class="toggle-bib" type="checkbox" hidden /> [bib]</label>
+                    <label class="pub-toggle-link"><input class="pub-toggle-bib" type="checkbox" hidden /> [bib]</label>
                 </p>
 
-                <pre class="abs">Prefix-sharing among multiple prompts presents opportunities to combine the operations of the shared prefix, while attention computation in the decode stage, which becomes a critical bottleneck with increasing context lengths, is a memory-intensive process requiring heavy memory access on the key-value (KV) cache of the prefixes. Therefore, in this paper, we explore the potential of prefix-sharing in the attention computation of the decode stage. However, the tree structure of the prefix-sharing mechanism presents significant challenges for attention computation in efficiently processing shared KV cache access patterns while managing complex dependencies and balancing irregular workloads. To address the above challenges, we propose a dedicated attention kernel to combine the memory access of shared prefixes in the decoding stage, namely FlashForge. FlashForge delivers two key innovations: a novel shared-prefix attention kernel that optimizes memory hierarchy and exploits both intra-block and inter-block parallelism, and a comprehensive workload balancing mechanism that efficiently estimates cost, divides tasks, and schedules execution. Experimental results show that FlashForge achieves an average 1.9x speedup and 120.9x memory access reduction compared to the state-of-the-art FlashDecoding kernel regarding attention computation in the decode stage and 3.8x end-to-end time per output token compared to the vLLM.</pre>
+                <pre class="pub-abs">Prefix-sharing among multiple prompts presents opportunities to combine the operations of the shared prefix, while attention computation in the decode stage, which becomes a critical bottleneck with increasing context lengths, is a memory-intensive process requiring heavy memory access on the key-value (KV) cache of the prefixes. Therefore, in this paper, we explore the potential of prefix-sharing in the attention computation of the decode stage. However, the tree structure of the prefix-sharing mechanism presents significant challenges for attention computation in efficiently processing shared KV cache access patterns while managing complex dependencies and balancing irregular workloads. To address the above challenges, we propose a dedicated attention kernel to combine the memory access of shared prefixes in the decoding stage, namely FlashForge. FlashForge delivers two key innovations: a novel shared-prefix attention kernel that optimizes memory hierarchy and exploits both intra-block and inter-block parallelism, and a comprehensive workload balancing mechanism that efficiently estimates cost, divides tasks, and schedules execution. Experimental results show that FlashForge achieves an average 1.9x speedup and 120.9x memory access reduction compared to the state-of-the-art FlashDecoding kernel regarding attention computation in the decode stage and 3.8x end-to-end time per output token compared to the vLLM.</pre>
 
-                <pre class="bib">
-@misc{wang2025flashforgeultraefficientprefixawareattention,
-    title={FlashForge: Ultra-Efficient Prefix-Aware Attention for LLM Decoding},
-    author={Zhibin Wang and Rui Ning and Chao Fang and Zhonghui Zhang and Xi Lin and Shaobo Ma and Mo Zhou and Xue Li and Zhongfeng Wang and Chengying Huan and Rong Gu and Kun Yang and Guihai Chen and Sheng Zhong and Chen Tian},
-    year={2025},
-    eprint={2505.17694},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG},
-    url={https://arxiv.org/abs/2505.17694},
-}</pre
-                >
+                <pre class="pub-bib">
+                    @misc{wang2025flashforgeultraefficientprefixawareattention,
+                        title={FlashForge: Ultra-Efficient Prefix-Aware Attention for LLM Decoding},
+                        author={Zhibin Wang and Rui Ning and Chao Fang and Zhonghui Zhang and Xi Lin and Shaobo Ma and Mo Zhou and Xue Li and Zhongfeng Wang and Chengying Huan and Rong Gu and Kun Yang and Guihai Chen and Sheng Zhong and Chen Tian},
+                        year={2025},
+                        eprint={2505.17694},
+                        archivePrefix={arXiv},
+                        primaryClass={cs.LG},
+                        url={https://arxiv.org/abs/2505.17694},
+                    }
+                </pre>
             </div>
 
             <h3>Education</h3>
-            <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="0" style="margin-top: 0px; margin-bottom: 10px">
+            <table class="edu">
                 <tr>
                     <td width="50%" valign="top">
                         <b>Nanjing University</b>, China<br />
@@ -289,8 +281,7 @@
             </ul>
         </main>
         <footer>
-            Updated in Sep. 2025
-            <br />
+            Updated in Sep. 2025<br />
             &copy; 2024-2025 Rui Ning.
         </footer>
     </body>
