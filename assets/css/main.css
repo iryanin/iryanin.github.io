@@ -253,6 +253,9 @@ ol {
 .project > p {
     margin-block: 10px;
 }
+.project > ul {
+    margin-block-end: 10px;
+}
 
 /* Education */
 .edu {
