@@ -286,7 +286,7 @@ ol {
     /* box */
     inline-size: max-content;
     min-inline-size: 16ch;
-    max-inline-size: min(28ch, 90vw);
+    max-inline-size: min(26ch, 90vw);
     border-radius: var(--tooltip-radius);
     padding: var(--tooltip-pad-y) var(--tooltip-pad-x);
 
